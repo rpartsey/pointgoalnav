@@ -63,39 +63,39 @@
             <div class="section">
                 <div class="row justify-content-center">
                     <div class="col-sm-8">
-                        <p>
-                            Can an autonomous agent navigate in a new environment without ever building an explicit map?
-                            For the task of PointGoal navigation (`Go to $\Delta x$, $\Delta y$`) under idealized
-                            settings (no RGB-D and actuation noise, perfect GPS+Compass), the answer is a clear `yes`
-                            &mdash; map-less neural models composed of task-agnostic components (CNNs and RNNs) trained
-                            with
-                            large-scale reinforcement learning achieve 100% Success on a standard dataset
-                            (Gibson [<a class="text-decoration-none" href="#ramakrishnan2021habitat">1</a>]). However,
-                            for
-                            PointNav in a <em>realistic</em> setting (RGB-D and actuation noise, no GPS+Compass), this
-                            is an
-                            open question; one we tackle in this paper. The strongest published result for this task is
-                            71.7% Success [<a class="text-decoration-none" href="#zhao2021the">2</a>]<sup>1</sup>.
-                            First, we identify the main (perhaps, only) cause of the drop in performance: absence of
-                            GPS+Compass. An agent with perfect GPS+Compass faced with RGB-D sensing and actuation noise
-                            achieves 99.8% Success (Gibson-v2 val). This suggests that (to paraphrase a meme)
-                            robust visual odometry is all we need for realistic PointNav; if we can achieve that, we can
-                            ignore the sensing and actuation noise. With that as our operating hypothesis, we develop
-                            human-annotation-free data-augmentation techniques to train neural models for visual
-                            odometry.
-                            Taken together with our other proposed methods, we advance state of the art on the Habitat
-                            Realistic PointNav Challenge &mdash; SPL by 40% (relative), 53 to 74, and Success by 31%
-                            (relative), 71 to 94. While our approach does not saturate or `solve` this dataset, this
-                            strong
-                            improvement provides evidence consistent with the hypothesis that explicit mapping may not
-                            be
-                            necessary for navigation, even in realistic setting.
-                        </p>
-                        <p><sup>1</sup>According to Habitat Challenge 2020 PointNav benchmark held annually. A
-                            concurrent
-                            as-yet-unpublished result has reported 91% Success on 2021's benchmark, but we are unable to
-                            comment on the details because an
-                            associated report is not available.</p>
+                    <p>Can an autonomous agent navigate in a new environment without building an explicit map?</p>
+                    <p>For the task of PointGoal navigation (Go to $\Delta x$, $\Delta y$) under idealized
+                        settings (no RGB-D and actuation noise, perfect GPS+Compass), the answer is a clear `yes`
+                        &mdash; map-less neural models composed of task-agnostic components (CNNs and RNNs) trained with
+                        large-scale reinforcement learning achieve 100% Success on a standard dataset
+                        (Gibson [<a class="text-decoration-none" href="#ramakrishnan2021habitat">1</a>]). However, for
+                        PointNav in a
+                        <it>realistic</it>
+                        setting (RGB-D and actuation noise, no GPS+Compass), this is
+                        an open question; one we tackle in this paper. The strongest published result for this task is
+                        71.7% Success [<a class="text-decoration-none" href="#zhao2021the">2</a>]<sup>1</sup>.
+                    </p>
+
+                    <p>First, we identify the main (perhaps, only) cause of the drop in performance: absence of
+                        GPS+Compass. An agent with perfect GPS+Compass faced with RGB-D sensing and actuation noise
+                        achieves 99.8% Success (Gibson-v2 val). This suggests that (to paraphrase a meme) robust visual
+                        odometry is all we need for realistic PointNav; if we can achieve that, we can ignore the
+                        sensing and actuation noise.</p>
+
+                    <p>With that as our operating hypothesis, we scale dataset and model size, and develop
+                        human-annotation-free data-augmentation techniques to train models for visual odometry. We
+                        advance the state of art on the Habitat Realistic PointNav Challenge from 71% to 94% Success
+                        (+23, 31% relative) and 53% to 74% SPL (+21, 40% relative). While our approach does not saturate
+                        or `solve` this dataset, this strong improvement combined with promising zero-shot sim2real
+                        transfer
+                        (to a LoCoBot) provides evidence consistent with the hypothesis that explicit mapping may not be
+                        necessary for navigation, even in a realistic setting.</p>
+                    </p>
+
+                    <p><sup>1</sup>According to Habitat Challenge 2020 PointNav benchmark held annually. A concurrent
+                        as-yet-unpublished result has reported 91% Success on 2021's benchmark, but we are unable to
+                        comment on the details because an
+                        associated report is not available.</p>
                     </div>
                 </div>
             </div>
