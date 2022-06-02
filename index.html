@@ -28,7 +28,13 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
                     <ul class="navbar-nav me-auto ps-3">
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="#about">
+                                <img class="conference" src="img/cvpr22.png">
+                            </a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#about">About</a>
                         </li>
@@ -39,7 +45,7 @@
                             <a class="nav-link" href="#sim2real">Sim2real</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#results">Results</a>
+                            <a class="nav-link" href="#results">Qualitative Results</a>
                         </li>
                     </ul>
                 </div>
@@ -185,9 +191,15 @@
                         <h3 class="text-center">Online Leaderboard</h3>
                         <hr>
                         <a href="https://eval.ai/web/challenges/challenge-page/802/leaderboard/2192"
-                           target="_blank"><img
-                                class="img-fluid"
-                                src="img/leaderboard.png"></a>
+                           target="_blank">
+                            <figure class="figure">
+
+                                <img class="img-fluid" src="img/leaderboard.png">
+                                <figcaption class="figure-caption"> Online benchmark test-standard split (retrieved
+                                    2021-Nov-16). The work of ‘inspir.ai robotics’ is concurrent unpublished work.
+                                </figcaption>
+                            </figure>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -195,7 +207,7 @@
             <div class="section pt-5" id="results">
                 <div class="row justify-content-center pt-3">
                     <div class="col-sm-8 pb-3">
-                        <h3 class="text-center">Results</h3>
+                        <h3 class="text-center">Qualitative Results</h3>
                         <hr>
                         <div class="dataset">
                             <h4>Gibson 4+ (val)</h4>
@@ -203,7 +215,14 @@
                                 <iframe src="https://www.youtube.com/embed/videoseries?list=PLOpaOPpuhyVGdV0TiYkLaG-vYwpYmNqU4"
                                         allowfullscreen></iframe>
                             </div>
-                            <img class="img-fluid pt-3" src="img/gibson.png">
+                            <figure class="figure">
+                                <img class="img-fluid pt-3" src="img/gibson.png">
+                                <figcaption class="figure-caption">Our best HC 2021 PointNav agent’s navigation
+                                    trajectories on Gibson 4+ val scenes (and Gibson-v2 PointGoal navigation episodes)
+                                    broken down by geodesic distance between agent’s spawn location and target (on rows)
+                                    vs SPL achieved by the agent (on cols).
+                                </figcaption>
+                            </figure>
                         </div>
                         <div class="dataset pt-5">
                             <h4>Matterport3D (val)</h4>
@@ -211,7 +230,15 @@
                                 <iframe src="https://www.youtube.com/embed/videoseries?list=PLOpaOPpuhyVHltiNA2WZ4HMGW-NfiDXOs"
                                         allowfullscreen></iframe>
                             </div>
-                            <img class="img-fluid pt-3" src="img/matterport.png">
+                            <figure class="figure">
+                                <img class="img-fluid pt-3" src="img/matterport.png">
+                                <figcaption class="figure-caption"> Our best HC 2021 PointNav agent’s navigation
+                                    trajectories on MP3D val scenes (and MP3D-v2 PointGoal navigation episodes) broken
+                                    down by geodesic distance between agent’s spawn location and target (on rows) vs SPL
+                                    achieved by the agent (on cols).
+                                </figcaption>
+                            </figure>
+
                         </div>
                         <p class="pt-3">Agent is asked to navigate from blue square to green square. The color of the
                             trajectory
@@ -231,7 +258,7 @@
             <div class="section pt-5" id="sim2real">
                 <div class="row justify-content-center pt-3">
                     <div class="col-sm-8">
-                        <h3 class="text-center">Sim2real</h3>
+                        <h3 class="text-center">Simulation-to-reality Transfer</h3>
                         <hr>
                         <div class="dataset">
                             <h4 id="3d-person-view">3rd-person view</h4>
@@ -249,6 +276,10 @@
                         </div>
                         <p>To see navigation metrics for episodes from the playlists above, please, open the video in a
                             separate tab and check the video description.</p>
+                        <div class="dataset">
+                            <h4>Reality experiments top-down maps</h4>
+                            <img class="img-fluid pt-3" src="img/reality.png">
+                        </div>
                     </div>
                 </div>
             </div>
