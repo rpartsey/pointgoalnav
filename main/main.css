@@ -18,6 +18,9 @@ body {
 .logo {
     width: 75px;
 }
+.conference {
+    width: 70px;
+}
 .video2 {
     position: relative;
     padding-bottom: 57%;

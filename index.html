@@ -28,7 +28,13 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
                     <ul class="navbar-nav me-auto ps-3">
+                        <li class="nav-item d-sm-none d-none d-md-none d-lg-block">
+                            <a class="navbar-brand" href="https://cvpr2022.thecvf.com/">
+                                <img class="conference" src="img/cvpr22.png">
+                            </a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#about">About</a>
                         </li>
@@ -44,13 +50,13 @@
                     </ul>
                 </div>
                 <a href="https://ucu.edu.ua/en/" class="ps-2">
-                    <img class="logo d-sm-none d-none d-md-block" src="img/ucu.png">
+                    <img class="logo d-sm-none d-none d-md-none d-lg-block" src="img/ucu.png">
                 </a>
                 <a href="https://https://www.gatech.edu" class="ps-2">
-                    <img class="logo d-sm-none d-none d-md-block" src="img/ga.png">
+                    <img class="logo d-sm-none d-none d-md-none d-lg-block" src="img/ga.png">
                 </a>
                 <a href="https://ai.facebook.com/" class="ps-2">
-                    <img class="logo d-sm-none d-none d-md-block" src="img/meta.png">
+                    <img class="logo d-sm-none d-none d-md-none d-lg-block" src="img/meta.png">
                 </a>
             </nav>
         </div>
@@ -58,46 +64,43 @@
     <div class="container-fluid bg-light m">
         <div class="row justify-content-center" id="about">
             <div class="col-sm-8 pt-5">
-                <h2 class="text-center pt-5">Is Mapping Necessary for Realistic PointGoal Navigation?</h2>
-                <h4 class="text-center pb-2"><a href="https://cvpr2022.thecvf.com/" class="text-decoration-none"
-                                                target="_blank">CVPR 2022</a></h4>
-                <hr>
-                <div class="row justify-content-center">
+                <h2 class="text-center pt-5 pb-3">Is Mapping Necessary for Realistic PointGoal Navigation?</h2>
+                <div class="row justify-content-center g-1">
                     <div class="col-md-2 text-center">
                         <a href="https://apps.ucu.edu.ua/ruslan-partsey/" class="text-decoration-none"
                            target="_blank">
                             <img src="img/ruslan_partsey.jpg"
-                                 class="rounded-circle img-fluid d-sm-none d-none d-md-block">
-                            <span>Ruslan Partsey<sup>1</sup></span>
+                                 class="rounded-circle img-fluid d-sm-none d-none d-md-block px-1">
+                            <small>Ruslan Partsey<sup>1</sup></small>
                         </a>
                     </div>
                     <div class="col-md-2 text-center">
                         <a href="https://wijmans.xyz" class="text-decoration-none" target="_blank">
                             <img src="img/erik_wijmans.jpg"
-                                 class="rounded-circle img-fluid d-sm-none d-none d-md-block">
-                            <span>Erik Wijmans<sup>2,3</sup></span>
+                                 class="rounded-circle img-fluid d-sm-none d-none d-md-block px-1">
+                            <small>Erik Wijmans<sup>2,3</sup></small>
                         </a>
                     </div>
                     <div class="col-md-2 text-center">
                         <a href="http://naoki.io" class="text-decoration-none" target="_blank">
                             <img src="img/naoki_yokoyama.jpeg"
-                                 class="rounded-circle img-fluid d-sm-none d-none d-md-block">
-                            <span>Naoki Yokoyama<sup>2</sup></span>
+                                 class="rounded-circle img-fluid d-sm-none d-none d-md-block px-1">
+                            <small>Naoki Yokoyama<sup>2</sup></small>
                         </a>
                     </div>
                     <div class="col-md-2 text-center">
                         <a href="https://apps.ucu.edu.ua/en/oles-dobosevych/" class="text-decoration-none"
                            target="_blank">
                             <img src="img/oles_dobosevych.jpeg"
-                                 class="rounded-circle img-fluid d-sm-none d-none d-md-block">
-                            <span>Oles Dobosevych<sup>1</sup></span>
+                                 class="rounded-circle img-fluid d-sm-none d-none d-md-block px-1">
+                            <small>Oles Dobosevych<sup>1</sup></small>
                         </a>
                     </div>
                     <div class="col-md-2 text-center">
                         <a href="https://www.cc.gatech.edu/~dbatra/" class="text-decoration-none" target="_blank">
                             <img src="img/dhruv_batra.jpeg"
-                                 class="rounded-circle img-fluid d-sm-none d-none d-md-block">
-                            <span>Dhruv Batra<sup>2,3</sup></span>
+                                 class="rounded-circle img-fluid d-sm-none d-none d-md-block px-1">
+                            <small>Dhruv Batra<sup>2,3</sup></small>
                         </a>
                     </div>
                     <div class="col-md-2 text-center">
@@ -105,8 +108,8 @@
                            class="text-decoration-none"
                            target="_blank">
                             <img src="img/oleksandr_maksymets.jpg"
-                                 class="rounded-circle img-fluid d-sm-none d-none d-md-block">
-                            <span>Oleksandr Maksymets<sup>3</sup></span>
+                                 class="rounded-circle img-fluid d-sm-none d-none d-md-block px-1">
+                            <small>Oleksandr Maksymets<sup>3</sup></small>
                         </a>
                     </div>
                 </div>
@@ -130,7 +133,6 @@
                     </a>
                 </h6>
             </div>
-
         </div>
         <div class="container-fluid pt-3">
             <div class="section">
@@ -185,9 +187,15 @@
                         <h3 class="text-center">Online Leaderboard</h3>
                         <hr>
                         <a href="https://eval.ai/web/challenges/challenge-page/802/leaderboard/2192"
-                           target="_blank"><img
-                                class="img-fluid"
-                                src="img/leaderboard.png"></a>
+                           target="_blank">
+                            <figure class="figure">
+
+                                <img class="img-fluid" src="img/leaderboard.png">
+                                <figcaption class="figure-caption"> Online benchmark test-standard split (retrieved
+                                    2021-Nov-16). The work of ‘inspir.ai robotics’ is concurrent unpublished work.
+                                </figcaption>
+                            </figure>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -195,7 +203,7 @@
             <div class="section pt-5" id="results">
                 <div class="row justify-content-center pt-3">
                     <div class="col-sm-8 pb-3">
-                        <h3 class="text-center">Results</h3>
+                        <h3 class="text-center">Qualitative Results</h3>
                         <hr>
                         <div class="dataset">
                             <h4>Gibson 4+ (val)</h4>
@@ -203,7 +211,14 @@
                                 <iframe src="https://www.youtube.com/embed/videoseries?list=PLOpaOPpuhyVGdV0TiYkLaG-vYwpYmNqU4"
                                         allowfullscreen></iframe>
                             </div>
-                            <img class="img-fluid pt-3" src="img/gibson.png">
+                            <figure class="figure">
+                                <img class="img-fluid pt-3" src="img/gibson.png">
+                                <figcaption class="figure-caption">Our best HC 2021 PointNav agent’s navigation
+                                    trajectories on Gibson 4+ val scenes (and Gibson-v2 PointGoal navigation episodes)
+                                    broken down by geodesic distance between agent’s spawn location and target (on rows)
+                                    vs SPL achieved by the agent (on cols).
+                                </figcaption>
+                            </figure>
                         </div>
                         <div class="dataset pt-5">
                             <h4>Matterport3D (val)</h4>
@@ -211,7 +226,15 @@
                                 <iframe src="https://www.youtube.com/embed/videoseries?list=PLOpaOPpuhyVHltiNA2WZ4HMGW-NfiDXOs"
                                         allowfullscreen></iframe>
                             </div>
-                            <img class="img-fluid pt-3" src="img/matterport.png">
+                            <figure class="figure">
+                                <img class="img-fluid pt-3" src="img/matterport.png">
+                                <figcaption class="figure-caption"> Our best HC 2021 PointNav agent’s navigation
+                                    trajectories on MP3D val scenes (and MP3D-v2 PointGoal navigation episodes) broken
+                                    down by geodesic distance between agent’s spawn location and target (on rows) vs SPL
+                                    achieved by the agent (on cols).
+                                </figcaption>
+                            </figure>
+
                         </div>
                         <p class="pt-3">Agent is asked to navigate from blue square to green square. The color of the
                             trajectory
@@ -231,7 +254,7 @@
             <div class="section pt-5" id="sim2real">
                 <div class="row justify-content-center pt-3">
                     <div class="col-sm-8">
-                        <h3 class="text-center">Sim2real</h3>
+                        <h3 class="text-center">Simulation-to-reality Transfer</h3>
                         <hr>
                         <div class="dataset">
                             <h4 id="3d-person-view">3rd-person view</h4>
@@ -249,6 +272,10 @@
                         </div>
                         <p>To see navigation metrics for episodes from the playlists above, please, open the video in a
                             separate tab and check the video description.</p>
+                        <div class="dataset">
+                            <h4>Reality experiments top-down maps</h4>
+                            <img class="img-fluid pt-3" src="img/reality.png">
+                        </div>
                     </div>
                 </div>
             </div>
